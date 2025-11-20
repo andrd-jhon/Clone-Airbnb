@@ -17,12 +17,17 @@ const Acomodacao = ({
     data,
     preco,
     avaliacao,
-    prefeirodHospedes
+    preferidoHospedes
 }: AcomodacaoProps) => {
     return (
         <figure className="relative">
             <div className=" p-2 absolute w-full flex flex-row justify-between items-center">
-                <span className="bg-white rounded-full px-4 py-1 border-1 font-semibold">Preferido dos hóspedes</span>
+                <div>
+                    {preferidoHospedes && (
+                        <span className="bg-white rounded-full px-4 py-1 border-1 font-semibold">{preferidoHospedes}</span>
+                    )}
+                </div>
+                
                 <IconHeartFilled 
                 aria-label="Favoritos" 
                 size={30}
