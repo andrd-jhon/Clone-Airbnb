@@ -2,6 +2,7 @@ import Acomodacoes from "@/widgets/Acomodacoes";
 import BarraPesquisa from "@/widgets/BarraPesquisa";
 import BarraSuperior from "@/widgets/BarraSuperior";
 import NavegacaoAbasHorizontal from "@/widgets/NavegacaoAbasHorizontal";
+import Rodape from "@/widgets/Rodape";
 
 export default function Home() {
   return (
@@ -16,7 +17,9 @@ export default function Home() {
         <NavegacaoAbasHorizontal/>
         <Acomodacoes/>
       </main>
-      <footer className="container mx-auto">footer</footer>
+      <footer>
+        <Rodape/>
+      </footer>
     </>
   );
 }
