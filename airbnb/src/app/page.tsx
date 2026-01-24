@@ -11,13 +11,13 @@ export default function Home() {
         <BarraSuperior />
         <BarraPesquisa />
       </header>
-      <hr className="my-3" />
+      <hr className="my-6" />
 
       <main className="container mx-auto">
         <NavegacaoAbasHorizontal/>
         <Acomodacoes/>
       </main>
-      <footer>
+      <footer className="bg-gray-200">
         <Rodape/>
       </footer>
     </>
