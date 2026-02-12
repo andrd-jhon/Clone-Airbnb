@@ -1,12 +1,16 @@
-interface PageProps{
+interface PageProps {
     id: string
 }
 
-export default async function Page({params} : {params: Promise<PageProps>}) {
-  console.log(params)
-  return (
-    <div>
-        Página de detalhes
-    </div>
-  );
+export default async function Page (
+    {params}: {params: Promise<PageProps>}
+){
+    
+    const dados = await params
+
+    return (
+        <div>
+            url: {dados.id}
+        </div>
+    )
 }
