@@ -1,16 +1,26 @@
+import BarraPesquisa from "@/widgets/BarraPesquisa";
+import BarraSuperior from "@/widgets/BarraSuperior";
+import Rodape from "@/widgets/Rodape";
+
 interface PageProps {
-    id: string
+  id: string;
 }
 
-export default async function Page (
-    {params}: {params: Promise<PageProps>}
-){
-    
-    const dados = await params
+export default async function Page({ params }: { params: Promise<PageProps> }) {
+//   const dados = await params;
 
-    return (
-        <div>
-            url: {dados.id}
-        </div>
-    )
+  return (
+    <div>
+      <header className="container mx-auto">
+        <BarraSuperior />
+        <BarraPesquisa />
+      </header>
+
+      <main className="container mx-auto">CONTEUDO AQUI!</main>
+
+      <footer className="bg-gray-200">
+        <Rodape />
+      </footer>
+    </div>
+  );
 }
