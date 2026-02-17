@@ -2,6 +2,8 @@ import BarraPesquisa from "@/widgets/BarraPesquisa";
 import BarraSuperior from "@/widgets/BarraSuperior";
 import Galeria from "@/widgets/Galeria";
 import Rodape from "@/widgets/Rodape";
+import AcomodacaoDetalhes from "@/widgets/AcomodacaoDetalhes";
+import AcomodacaoDepoimentos from "@/widgets/AcomodacaoDepoimentos";
 
 const acomodacao = {
       "number": 1,
@@ -212,6 +214,10 @@ export default async function Page({ params }: { params: Promise<PageProps> }) {
       <main className="container mx-auto">
         <h1 className="text-3xl mx-auto py-4 semi-bold">{acomodacao.title}</h1>
         <Galeria fotos = {acomodacao.photos}/>
+        <div className="flex flex-col md:flex-row">
+          <AcomodacaoDetalhes></AcomodacaoDetalhes>
+          <AcomodacaoDepoimentos></AcomodacaoDepoimentos>
+        </div>
       </main>
 
       <footer className="bg-gray-200">
