@@ -212,7 +212,7 @@ export default async function Page({ params }: { params: Promise<PageProps> }) {
       </header>
 
       <main className="container mx-auto">
-        <h1 className="text-3xl mx-auto py-4 semi-bold">{acomodacao.title}</h1>
+        <h1 className="text-3xl mx-auto py-4 font-semibold pb-2">{acomodacao.title}</h1>
         <Galeria fotos = {acomodacao.photos}/>
         <div className="flex flex-col md:flex-row">
           <AcomodacaoDetalhes></AcomodacaoDetalhes>

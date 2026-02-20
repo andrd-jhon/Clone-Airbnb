@@ -603,7 +603,7 @@ const Acomodacoes = () => {
                         width={300}
                         height={300}>
                         </Image>
-                    </Acomodacao>w
+                    </Acomodacao>
                     </Link>
                 </div>
             ))}
