@@ -1,14 +1,12 @@
-import { AirBnbApi } from "@/types/AirBnbDados"
+import { AirbnbApi } from "@/types/AirBnbDados"
 
-export async function fetchData (): Promise<AirBnbApi> {
+export async function fetchData(): Promise<AirbnbApi> {
     try {
-        const response = await fetch('https://web.codans.com.br/airbnb')
-        const dados = (await response.json()) as AirBnbApi
+        const response = await fetch("https://web.codans.com.br/airbnb")
+        const dados = response.json()
         return dados
-
-    }
-    catch (e) {
-        console.log(e)
+    } catch (e) {
+        console.error(e)
         throw e
-    } 
+    }
 }

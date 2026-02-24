@@ -1,9 +1,9 @@
-export interface AirBnbApi {
-    accomodation: Accomodation[]
+export interface AirbnbApi {
+    accommodation: Accommodation[]
     icons: Photo[]
 }
 
-export interface Accomodation {
+export interface Accommodation {
     id: string
     title: string
     date: string
@@ -25,11 +25,11 @@ export interface Testimonials {
     rating: number
     customerTime: number
     createdAt: number
-    stavedAt: number
-}
+    stayedAt: number
+  }
 
 export interface Photo {
-    id: string 
+    id: string
     source: string
     description: string
     url: string

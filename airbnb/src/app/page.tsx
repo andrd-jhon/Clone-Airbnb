@@ -11,7 +11,7 @@ export default async function Home() {
 
   return (
     <>
-      {dados.accomodation[0].title}
+      {dados.accommodation[0].title}
       <header className="container mx-auto">
         <BarraSuperior />
         <BarraPesquisa />
